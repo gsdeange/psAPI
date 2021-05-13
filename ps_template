@@ -1,0 +1,17 @@
+Value USER (\w+)
+Value GROUP (\w+)
+Value PID (\d+)
+Value CPU (\d+.\d+)
+Value MEM (\d+.\d+)
+Value RSS (\d+)
+Value STAT (\S+)
+Value WEEKDAY (\w+)
+Value MONTH (\w+)
+Value MONTHDAY (\d+)
+Value TIME (..:..:..)
+Value YEAR (\d+)
+Value ELAPSED (\d+)
+Value COMMAND (\S+)
+
+Start
+  ^${USER} +${GROUP} +${PID} +${CPU} +${MEM} +${RSS} +${STAT} +${WEEKDAY} +${MONTH} +${MONTHDAY} +${TIME} +${YEAR} +${ELAPSED} +${COMMAND} -> Record
