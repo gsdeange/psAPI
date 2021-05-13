@@ -46,7 +46,7 @@ Note: To use each of the features, click the 'GET' box and then 'try it out' on 
       
 **Filtering:**
 
-We can function the process data using a query string inputted by the user. Sorting is also available aftering filtering the data
+We can function the process data using a query string inputted by the user. Sorting is also available after filtering the data
 
 Required:
   
@@ -54,7 +54,8 @@ Required:
       
         Format example: PID == 6 & User == "root"
         
-        Basic boolean operations are supported, you must use double quotes for name queries ie. User == "<name>"
+        Basic boolean operations are supported, you must use double quotes for name queries 
+          ie. User == "<name>"
         
         Supported Fields:
           - User
@@ -71,10 +72,39 @@ Required:
           - Year
           - Elapsed
           - Command
-         
+          
+Optional:
+       s : sorting list to sort data (see Sorting for syntax)
        
     
-          
+**Sorting**
   
+  We can sort the process data using an inputted list from the user.
+  
+  Note: Sorting is done via left to right priority in the list and sorted in ascending order.
+  
+  Required:
+   
+   s: sort_list to sort data
+   
+        Format example: ['PID', 'User']
+        
+        The above example will sort by PID (ascending) then User (alphabetically)
+        
+        Supported Fields:
+          - User
+          - Group
+          - PID
+          - CPU
+          - MEM
+          - RSS
+          - STAT
+          - Weekday
+          - Month
+          - Day
+          - Time
+          - Year
+          - Elapsed
+          - Command
   
     
