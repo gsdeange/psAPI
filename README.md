@@ -6,3 +6,5 @@ Dependencies:
   - FastAPI
   - Uvicorn[standard]
   - textfsm
+  - json
+  - pandas
