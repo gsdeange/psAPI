@@ -1,13 +1,13 @@
 # psAPI
 RESTful API that returns the results of Linux ps command
 
-Dependencies:
+**Dependencies:**
   - FastAPI
   - Uvicorn[standard]
   - textfsm
   - pandas
 
-Setup instructions:
+**Setup instructions:**
   1. Make sure all dependencies/python packages are installed correctly using pip install <package>
       - pip install fastapi
       - pip install uvicorn
@@ -24,13 +24,19 @@ Setup instructions:
   3. Now psAPI is up and running!
 
 
-Use Instructions:
+
+**Use Instructions:**
+
   Browser use:
-    Go to browser and type "http://127.0.0.1:8000/".
+  
+    Go to browser and type "http://127.0.0.1:8000/"
+    
     You will now see all of the returned processes in JSON format
     
    Swagger UI:
-      Go to browser and type "http://127.0.0.1:8000/docs".
+   
+      Go to browser and type "http://127.0.0.1:8000/docs"
+      
       You will now see a Swagger UI with 3 different options for use
         - Default
         - Filtering
@@ -38,10 +44,13 @@ Use Instructions:
 
 Note: To use each of the features, click the 'GET' box and then 'try it out' on the right hand side of the expanded box
       
-Filtering:
-    We can function the process data using a query string inputted by the user. Sorting is also available aftering filtering the data
-    Required:
-        q: query string to filter the data
+**Filtering:**
+
+We can function the process data using a query string inputted by the user. Sorting is also available aftering filtering the data
+
+Required:
+  
+   q: query string to filter the data
       
         Format example: PID == 6 & User == "root"
         
